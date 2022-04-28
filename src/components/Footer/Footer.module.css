@@ -1,0 +1,14 @@
+
+.footer{
+    height: 50px;
+    background-color: #9419DD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.test{
+    fill: red;
+}

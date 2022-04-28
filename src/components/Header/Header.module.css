@@ -1,0 +1,32 @@
+.header{
+    height: 100px;
+    background-color: #e90e93;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+.link:active{
+    color: #FE7B84;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.heart{
+    margin-left: 15px;
+    width: 48px;
+}
+.siteName{
+    color: #FE7B84;
+    min-width: 150px;
+    margin-left: 15px;
+    font-size: 28px;
+}

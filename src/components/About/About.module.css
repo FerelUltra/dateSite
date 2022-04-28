@@ -1,0 +1,11 @@
+.main{
+    background: url("src/assets/lovers.jpg") no-repeat;
+    background-size: 100%;
+    height: calc(100vh - 100px);
+}
+.text{
+    color: snow;
+}
+.h2{
+    margin-top: 20px;
+}
