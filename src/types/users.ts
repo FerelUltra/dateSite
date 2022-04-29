@@ -9,7 +9,7 @@ interface IData {
     "name": string,
     "telegram": string | null,
     "tictok":  string | null,
-    "whatsup": string,
+    "whatsup": string | null,
     "instagram":  string | null,
     "facebook":  string | null,
     "age": number,
@@ -28,7 +28,7 @@ interface IImages {
 }
 
 export interface IUser {
-    "want_to_be_friend": string,
+    "want_to_be_friend": boolean,
     "interests": string[],
     "data": IData,
     "images": IImages

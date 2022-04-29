@@ -21,10 +21,10 @@ const Profile: FC = () => {
                 <div className={styles.infos}>Sex: {user.data.sex}</div>
                 <div className={styles.infos}>City: {user.data.city}</div>
                 <div className={styles.infos}>Interests: {user.interests.join(', ')}</div>
-                {user.data.telegram?  <a href={`https://web.telegram.org/${user.data.telegram}`}><img width="16px" src="src/assets/telegram-brands.svg" alt=""/></a> : null}
-                {user.data.facebook?  <a href={`https://facebook.com/${user.data.facebook}`}><img width="16px" src="src/assets/facebook-brands.svg" alt=""/></a> : null}
-                {user.data.instagram?  <a href={`https://instagram.com/${user.data.instagram}`}><img width="16px" src="src/assets/instagram-brands.svg" alt=""/></a> : null}
-                {user.data.whatsup? <a href={`tel:${user.data.whatsup}`}><img width="16px" src="src/assets/whatsapp-brands.svg" alt=""/></a> : null}
+                {user.data.telegram?  <a href={`https://web.telegram.org/${user.data.telegram}`}><img width="16px" src="telegram-brands.svg" alt=""/></a> : null}
+                {user.data.facebook?  <a href={`https://facebook.com/${user.data.facebook}`}><img width="16px" src="facebook-brands.svg" alt=""/></a> : null}
+                {user.data.instagram?  <a href={`https://instagram.com/${user.data.instagram}`}><img width="16px" src="instagram-brands.svg" alt=""/></a> : null}
+                {user.data.whatsup? <a href={`tel:${user.data.whatsup}`}><img width="16px" src="whatsapp-brands.svg" alt=""/></a> : null}
             </div>
         </div>
     )

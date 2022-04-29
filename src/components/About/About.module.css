@@ -1,5 +1,5 @@
 .main{
-    background: url("src/assets/lovers.jpg") no-repeat;
+    background: url("../../../public/lovers.jpg") no-repeat;
     background-size: 100%;
     height: calc(100vh - 100px);
 }

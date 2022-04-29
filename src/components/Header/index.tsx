@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 export const Header: FC = () => {
     return (
         <header className={styles.header}>
-            <img className={styles.heart} src="src/assets/heart-solid.svg" alt="heart"/>
+            <img className={styles.heart} src="heart-solid.svg" alt="heart"/>
             <span className={styles.siteName}>Date site</span>
             <ul className={styles.list}>
                 <li>

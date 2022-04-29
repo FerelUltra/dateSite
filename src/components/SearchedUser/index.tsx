@@ -1,4 +1,4 @@
-import {Dispatch, FC, MouseEventHandler} from "react";
+import {FC, MouseEventHandler} from "react";
 import styles from "./SearchedUser.module.css";
 import {BASE_URL} from "../../constants/urls";
 
@@ -28,7 +28,7 @@ export const SearchedUser: FC<IProps> = ({
             {image ?
                 <img className={styles.profileImage} src={`${BASE_URL}/${image}`}
                      alt=""/> :
-                <img className={styles.profileImage} src="src/assets/no-photo.png"
+                <img className={styles.profileImage} src="no-photo.png"
                      alt=""/>}
             <div className={styles.profileInfo}>
                 <h2 className={styles.profileHeading}>Profile info</h2>
@@ -37,8 +37,8 @@ export const SearchedUser: FC<IProps> = ({
                 <div className={styles.infos}>Sex: {sex}</div>
                 <div className={styles.infos}>City: {city}</div>
                 <div className={styles.infos}>Interests: {interests}</div>
-                <img onClick={increaseUserNumber} className={styles.like} src="src/assets/thumbs-up-solid.svg" alt=""/>
-                <img onClick={increaseUserNumber} className={styles.like} src="src/assets/thumbs-down-solid.svg" alt=""/>
+                <img onClick={increaseUserNumber} className={styles.like} src="thumbs-up-solid.svg" alt=""/>
+                <img onClick={increaseUserNumber} className={styles.like} src="thumbs-down-solid.svg" alt=""/>
 
             </div>
         </div>

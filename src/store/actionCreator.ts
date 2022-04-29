@@ -2,6 +2,7 @@ import {AppDispatch} from "./rootReducer";
 import axios from "axios";
 import {usersSlice} from "./usersReducer";
 import {BASE_URL} from "../constants/urls";
+import {mockData} from "../api/mockData";
 
 export const fetchUsers = () => async (dispatch: AppDispatch) =>{
     try{
@@ -16,5 +17,6 @@ export const fetchUsers = () => async (dispatch: AppDispatch) =>{
         dispatch(usersSlice.actions.usersFetchingSuccess(response.data))
     } catch (error: any) {
         dispatch(usersSlice.actions.usersFetchingError(error.message))
+        dispatch(usersSlice.actions.usersFetchingSuccess(mockData))
     }
 }
