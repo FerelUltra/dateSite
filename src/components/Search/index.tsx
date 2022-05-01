@@ -3,6 +3,7 @@ import {Layout} from "../Layout/Layout";
 import {useAppDispatch, useAppSelector} from "../../hooks/users";
 import {SearchedUser} from "../SearchedUser";
 import {fetchUsers} from "../../store/actionCreator";
+import styles from "./Search.module.css"
 
 const Search: FC = () => {
     const dispatch = useAppDispatch()
@@ -21,10 +22,13 @@ const Search: FC = () => {
     useEffect(() => {
         dispatch(fetchUsers())
     }, [areUsersOver])
+    useEffect(() => {
+        dispatch(fetchUsers())
+    }, [])
     return (
-        <>
+        <div className={styles.search}>
             <SearchedUser userNumber={userNumber}
-                          image={users[userNumber].images.document_image_1 ? users[userNumber].images.document_image_1!.docfile : null}
+                          images={users[userNumber].images}
                           name={users[userNumber].data.name}
                           age={users[userNumber].data.age}
                           city={users[userNumber].data.city}
@@ -33,7 +37,7 @@ const Search: FC = () => {
                           interests={users[userNumber].interests.join(", ")}
             />
 
-        </>
+        </div>
     )
 }
 export default <Layout component={<Search/>}/>

@@ -1,12 +1,11 @@
-.profilePicture {
-    width: 30%;
-}
-.profileImage{
-    width: 20%;
-}
+
 .profile {
     display: flex;
-
+    position: relative;
+    height: 1000px;
+    color: white;
+    width: 600px;
+    background-size: 100%;
 }
 .profileInfo{
     width: 80%;
@@ -16,9 +15,7 @@
     font-size: 40px;
 }
 .infos{
-    text-align: left;
-    font-size: 26px;
-    margin: 10px 0 0 4px;
+    position: absolute;
 }
 .like{
     width: 24px;
@@ -26,4 +23,8 @@
 }
 .like + .like{
     margin-left: 24px;
+}
+.name{
+    left: 10px;
+    bottom: 500px
 }

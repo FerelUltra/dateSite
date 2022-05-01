@@ -17,14 +17,21 @@ interface IData {
     "last_login": string
 }
 
-interface IDocfile {
+export interface IDocfile {
     docfile: string
 }
 
-interface IImages {
-    "document_image_1": IDocfile | null,
-    "document_image_2": IDocfile | null,
-    "document_image_3": IDocfile | null,
+const images = [
+    "document_image_1",
+    "document_image_2",
+    "document_image_3",
+]
+type imageNameType = typeof images[number]
+export interface IImages {
+    // "document_image_1": IDocfile | null,
+    // "document_image_2": IDocfile | null,
+    // "document_image_3": IDocfile | null,
+    [key: imageNameType]: IDocfile | null
 }
 
 export interface IUser {

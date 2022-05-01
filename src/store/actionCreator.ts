@@ -17,6 +17,6 @@ export const fetchUsers = () => async (dispatch: AppDispatch) =>{
         dispatch(usersSlice.actions.usersFetchingSuccess(response.data))
     } catch (error: any) {
         dispatch(usersSlice.actions.usersFetchingError(error.message))
-        dispatch(usersSlice.actions.usersFetchingSuccess(mockData))
+       // dispatch(usersSlice.actions.usersFetchingSuccess(mockData))
     }
 }
