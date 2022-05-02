@@ -1,0 +1,16 @@
+.hobbies{
+    display: flex;
+}
+.hobby{
+    border: 1px solid #9419DD;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    min-width: 120px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hobby + .hobby{
+    margin-left: 10px;
+}
