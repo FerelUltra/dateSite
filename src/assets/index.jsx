@@ -1,0 +1,15 @@
+export { default as AngleLeftSolidTransparent } from "./AngleLeftSolidTransparent";
+export { default as AngleLeftSolid } from "./AngleLeftSolid";
+export { default as AngleRightSolid } from "./AngleRightSolid";
+export { default as FacebookBrands } from "./FacebookBrands";
+export { default as HeartSolid } from "./HeartSolid";
+export { default as InboxSolid } from "./InboxSolid";
+export { default as InstagramBrands } from "./InstagramBrands";
+export { default as PhoneSolid } from "./PhoneSolid";
+export { default as TelegramBrands } from "./TelegramBrands";
+export { default as ThumbsDownSolid } from "./ThumbsDownSolid";
+export { default as ThumbsUpSolid } from "./ThumbsUpSolid";
+export { default as TiktokBrands } from "./TiktokBrands";
+export { default as VkBrands } from "./VkBrands";
+export { default as WhatsappBrands } from "./WhatsappBrands";
+export { default as YoutubeBrands } from "./YoutubeBrands";

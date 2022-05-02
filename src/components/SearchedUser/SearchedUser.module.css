@@ -7,24 +7,82 @@
     width: 600px;
     background-size: 100%;
 }
-.profileInfo{
-    width: 80%;
-}
-.profileHeading{
+
+.profileHeading {
     text-align: center;
     font-size: 40px;
 }
-.infos{
+
+.infos {
     position: absolute;
 }
-.like{
-    width: 24px;
-    cursor: pointer;
+.nameAge{
+    bottom: 200px;
+    left: 10px;
+    display: flex;
+    width: 100%;
+    align-items: baseline;
 }
-.like + .like{
+.name {
+    font-size: 64px;
+    font-weight: 800;
+}
+.age{
+    font-size: 40px;
+    margin-left: 10px;
+}
+.sex{
+    bottom: 180px;
+    left: 10px;
+    font-size: 24px;
+}
+.hobbies{
+    bottom: 120px;
+    left: 15px;
+}
+/*like-dislike*/
+.thumbs {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    bottom: 5%;
+    position: absolute;
+}
+.downlike {
+    right: 37%;
+    fill: #FC0F21;
+}
+
+.uplike {
+    left: 37%;
+    fill: limegreen;
+}
+.like + .like {
     margin-left: 24px;
 }
-.name{
-    left: 10px;
-    bottom: 500px
+
+/*slide*/
+.slide{
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    fill: white;
+    opacity: 0.4;
+    top: 50%;
 }
+.slideLeft {
+   left: 10px;
+}
+
+.slideLeft:hover {
+    opacity: 1;
+}
+
+.slideRight {
+    right: 10px;
+}
+
+.slideRight:hover {
+    opacity: 1;
+}
+

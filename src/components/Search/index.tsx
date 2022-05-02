@@ -34,7 +34,7 @@ const Search: FC = () => {
                           city={users[userNumber].data.city}
                           sex={users[userNumber].data.sex}
                           increaseUserNumber={increaseUserNumber}
-                          interests={users[userNumber].interests.join(", ")}
+                          hobbies={users[userNumber].interests}
             />
 
         </div>
